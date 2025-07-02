@@ -9,7 +9,7 @@ export default function Hero() {
     return (<div clasName="bg-gray-600">
         <Header />
 
-    {width>768?<div className="absolute md:hidden md:z-0 theCornerCircle h-[700px] w-[700px] bg-[#cbe56a] rounded-full z-[-1]"/>:""}
+    <div className="absolute  theCornerCircle h-[700px] w-[700px] bg-[#cbe56a] rounded-full z-[-1]"></div>
         <section className="flex flex-col md:flex-row items-center justify-between px-8 py-12 relative">
             <div className="max-w-xl theHeroIntro">
                 <h1 className="text-4xl font-bold mb-4">
