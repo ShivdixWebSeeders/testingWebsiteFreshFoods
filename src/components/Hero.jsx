@@ -1,11 +1,15 @@
+import { useContext } from 'react';
 import heroPlate from '../assets/images/hero-plate.png';
 import Header from './Header'
 import '../assets/styles/Hero.css'
+import UIContext from '../context/UIContext';
+
 export default function Hero() {
+    const {width} = useContext(UIContext);
     return (<div clasName="bg-gray-600">
         <Header />
 
-        <div class="absolute  theCornerCircle h-[700px] w-[700px] bg-[#cbe56a] rounded-full z-[-1]"></div>
+    {width>768?<div className="absolute md:hidden md:z-0 theCornerCircle h-[700px] w-[700px] bg-[#cbe56a] rounded-full z-[-1]"/>:""}
         <section className="flex flex-col md:flex-row items-center justify-between px-8 py-12 relative">
             <div className="max-w-xl theHeroIntro">
                 <h1 className="text-4xl font-bold mb-4">

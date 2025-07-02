@@ -5,5 +5,11 @@
 .theHeroIntro{
     margin-left: 15%;
     max-width: 35%;
-    
+
+}
+@media (max-width: 768px) {
+
+    .theCornerCircle{
+        display: none;
+    }
 }

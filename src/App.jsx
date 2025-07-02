@@ -5,11 +5,12 @@ import SuggestedProducts from './components/SuggestedProducts';
 import BrowseProducts from './components/BrowseProducts';
 import DeliveryInfo from './components/DeliveryInfo';
 import Footer from './components/Footer';
+import UIContextProvider from './context/UIContextProvider';
 
 function App() {
   return (
     <div>
-      {/* <Header /> */}
+
       <Hero />
       <Features />
       <SuggestedProducts />
